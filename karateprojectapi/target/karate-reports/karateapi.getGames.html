@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1a3f459e-5c1f-47c7-88cb-fdfb3ccf10d1",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karateapi.getGames</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-23 10:53:06 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Retrieve game with id 7 and title &quot;Halo Infinite&quot;</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karateapi/getGames.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing games endpoint with specific parameters</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Retrieve game with id 7 and title &quot;Halo Infinite&quot;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>90</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params {id:7) #, title:&#39;Halo Infinite&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">22:53:06.555 request:
+1 &gt; GET http://localhost:3000/games?id=7%29+%23&amp;title=Halo+Infinite
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:53:06.576 response time in milliseconds: 21
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2963
+1 &lt; ETag: W/&quot;b93-H3Bgk7wU2CI8dlF6LXszTHLCHQo&quot;
+1 &lt; Date: Sat, 24 Feb 2024 04:53:06 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:[{&quot;id&quot;:3,&quot;title&quot;:&quot;Spider-Man: Miles Morales&quot;,&quot;genre&quot;:&quot;Action-adventure&quot;,&quot;platform&quot;:&quot;PlayStation 5, PlayStation 4&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Insomniac Games&quot;,&quot;price&quot;:&quot;49.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Exciting follow-up to Spider-Man PS4 with a new hero and storyline&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;Ghost of Tsushima&quot;,&quot;genre&quot;:&quot;Action-adventure&quot;,&quot;platform&quot;:&quot;PlayStation 4&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Sucker Punch Productions&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Beautiful open-world samurai game with engaging combat mechanics&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot;Cyberpunk 2077&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;CD Projekt Red&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:7,&quot;review&quot;:&quot;Ambitious open-world game with technical issues at launch&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot;Apart&quot;,&quot;genre&quot;:&quot;Platformer&quot;,&quot;platform&quot;:&quot;PlayStation 5&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Insomniac Games&quot;,&quot;price&quot;:&quot;69.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Innovative platformer showcasing the power of the PS5 with dimensional rifts&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Halo Infinite&quot;,&quot;genre&quot;:&quot;First-person shooter&quot;,&quot;platform&quot;:&quot;Xbox Series X/S, Xbox One, Microsoft Windows&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;343 Industries&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Highly anticipated return of the iconic Halo series with new features&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot;Resident Evil Village&quot;,&quot;genre&quot;:&quot;Survival horror&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Capcom&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Spine-chilling horror experience set in a mysterious village&quot;},{&quot;id&quot;:13,&quot;title&quot;:&quot;God of War Ragnarok&quot;,&quot;genre&quot;:&quot;Action-adventure&quot;,&quot;platform&quot;:&quot;PlayStation 5&quot;,&quot;release_year&quot;:2022,&quot;developer&quot;:&quot;Santa Monica Studio&quot;,&quot;price&quot;:&quot;69.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Epic continuation of Kratos&#39; journey with Norse mythology&quot;},{&quot;id&quot;:15,&quot;title&quot;:&quot;Yakuza: Like a Dragon&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Ryu Ga Gotoku Studio&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Fresh take on the Yakuza series, introducing turn-based combat and a new protagonist&quot;},{&quot;id&quot;:16,&quot;title&quot;:&quot;Watch Dogs: Legion&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;Microsoft Windows, Xbox Series X/S&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Ubisoft Toronto&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Description: Innovative open-world game where players can recruit and control any character in a near-future London, offering diverse gameplay possibilities&quot;},{&quot;id&quot;:17,&quot;title&quot;:&quot;Baldur Gate III&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Larian Studios&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Highly anticipated sequel to the beloved Baldurs Gate series, featuring deep role-playing mechanics, rich storytelling, and challenging tactical combat&quot;}],&quot;meta&quot;:{&quot;page&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].title == &#39;Halo Infinite&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].genre == &#39;First-person shooter&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].platform ==&#39;Xbox Series X/S, Xbox One, Microsoft Windows&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].release_year == 2021</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].developer == &#39;343 Industries&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].price == &#39;59.99&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].rating == 8</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.data[4].review == &#39;Highly anticipated return of the iconic Halo series with new features&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
